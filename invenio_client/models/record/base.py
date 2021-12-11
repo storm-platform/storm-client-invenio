@@ -40,7 +40,7 @@ class RecordBase(BaseModel):
         return is_record(self.data)
 
     def to_json(self):
-        return json.loads(json.dumps(self, cls=self.serializer_cls))
+        return json.loads(json.dumps(self.data, cls=self.serializer_cls))
 
 
 __all__ = "RecordBase"
