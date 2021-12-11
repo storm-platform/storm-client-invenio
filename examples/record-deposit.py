@@ -2,18 +2,18 @@
 #
 # Copyright (C) 2021 Storm Project.
 #
-# invenio-client is free software; you can redistribute it and/or modify it
+# storm-client-invenio is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 
-from invenio_client import InvenioRDM
-from invenio_client.models.record import Record, RecordDraft
+from storm_client_invenio import InvenioRDM
+from storm_client_invenio.models.record import Record, RecordDraft
 
 #
 # 1. Create a InvenioRDM Client instance.
 #
 service = InvenioRDM(
-    "https://invenio-address/api",
-    "invenio-token",
+    "https://invenio-instance/api",
+    "",
 )
 
 #

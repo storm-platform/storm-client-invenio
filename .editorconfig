@@ -2,7 +2,7 @@
 #
 # Copyright (C) 2021 Storm Project.
 #
-# invenio-client is free software; you can redistribute it and/or modify it
+# storm-client-invenio is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 
 root = true
@@ -18,7 +18,7 @@ charset = utf-8
 [*.py]
 indent_size = 4
 # isort plugin configuration
-known_first_party = invenio_client
+known_first_party = storm_client_invenio
 multi_line_output = 2
 default_section = THIRDPARTY
 skip = .eggs

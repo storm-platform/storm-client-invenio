@@ -10,7 +10,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/storm-platform/invenio-client/issues.
+Report bugs at https://github.com/storm-platform/storm-client-invenio/issues.
 
 If you are reporting a bug, please include:
 
@@ -33,15 +33,15 @@ is open to whoever wants to implement it.
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-invenio-client could always use more documentation, whether as part of the
-official invenio-client docs, in docstrings, or even on the web in blog posts,
+storm-client-invenio could always use more documentation, whether as part of the
+official storm-client-invenio docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
 The best way to send feedback is to file an issue at
-https://github.com/storm-platform/invenio-client/issues.
+https://github.com/storm-platform/storm-client-invenio/issues.
 
 If you are proposing a feature:
 
@@ -53,14 +53,14 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `invenio-client` for local development.
+Ready to contribute? Here's how to set up `storm-client-invenio` for local development.
 
-1. Fork the `storm-platform/invenio-client` repo on GitHub.
+1. Fork the `storm-platform/storm-client-invenio` repo on GitHub.
 2. Clone your fork locally:
 
    .. code-block:: console
 
-      $ git clone git@github.com:your_name_here/invenio-client.git
+      $ git clone git@github.com:your_name_here/storm-client-invenio.git
 
 3. Install your local copy into a virtualenv. Assuming you have
    virtualenvwrapper installed, this is how you set up your fork for local
@@ -68,8 +68,8 @@ Ready to contribute? Here's how to set up `invenio-client` for local development
 
    .. code-block:: console
 
-      $ mkvirtualenv invenio-client
-      $ cd invenio-client/
+      $ mkvirtualenv storm-client-invenio
+      $ cd storm-client-invenio/
       $ pip install -e .[all]
 
 4. Create a branch for local development:
@@ -114,5 +114,5 @@ Before you submit a pull request, check that it meets these guidelines:
 2. If the pull request adds functionality, the docs should be updated. Put
    your new functionality into a function with a docstring.
 3. The pull request should work for Python 3.6, 3.7, 3.8 and 3.9. Check
-   https://github.com/inveniosoftware/storm-platform/invenio-client/actions?query=event%3Apull_request
+   https://github.com/inveniosoftware/storm-platform/storm-client-invenio/actions?query=event%3Apull_request
    and make sure that the tests pass for all supported Python versions.

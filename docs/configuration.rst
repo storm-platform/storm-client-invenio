@@ -1,12 +1,12 @@
 ..
     Copyright (C) 2021 Storm Project.
 
-    invenio-client is free software; you can redistribute it and/or modify
+    storm-client-invenio is free software; you can redistribute it and/or modify
     it under the terms of the MIT License; see LICENSE file for more details.
 
 
 Configuration
 =============
 
-.. automodule:: invenio_client.config
+.. automodule:: storm_client_invenio.config
    :members:

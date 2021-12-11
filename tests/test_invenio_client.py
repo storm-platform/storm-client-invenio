@@ -2,19 +2,19 @@
 #
 # Copyright (C) 2021 Storm Project.
 #
-# invenio-client is free software; you can redistribute it and/or modify it
+# storm-client-invenio is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 
 """Module tests."""
 
 from flask import Flask
 
-from invenio_client import InvenioClient
+from storm_client_invenio import InvenioClient
 
 
 def test_version():
     """Test version import."""
-    from invenio_client import __version__
+    from storm_client_invenio import __version__
     assert __version__
 
 
@@ -22,17 +22,17 @@ def test_init():
     """Test extension initialization."""
     app = Flask('testapp')
     ext = InvenioClient(app)
-    assert 'invenio-client' in app.extensions
+    assert 'storm-client-invenio' in app.extensions
 
     app = Flask('testapp')
     ext = InvenioClient()
-    assert 'invenio-client' not in app.extensions
+    assert 'storm-client-invenio' not in app.extensions
     ext.init_app(app)
-    assert 'invenio-client' in app.extensions
+    assert 'storm-client-invenio' in app.extensions
 
 
 def test_view(base_client):
     """Test view."""
     res = base_client.get("/")
     assert res.status_code == 200
-    assert 'Welcome to invenio-client' in str(res.data)
+    assert 'Welcome to storm-client-invenio' in str(res.data)

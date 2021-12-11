@@ -2,7 +2,7 @@
 #
 # Copyright (C) 2021 Storm Project.
 #
-# invenio-client is free software; you can redistribute it and/or modify it
+# storm-client-invenio is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 
 """Sphinx configuration."""
@@ -45,7 +45,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'invenio-client'
+project = u'storm-client-invenio'
 copyright = u'2021, Storm Project'
 author = u'Felipe Menino Carlos'
 
@@ -58,7 +58,7 @@ author = u'Felipe Menino Carlos'
 # Get the version string. Cannot be done with import!
 g = {}
 with open(os.path.join(os.path.dirname(__file__), '..',
-                       'invenio_client', 'version.py'),
+                       'storm_client_invenio', 'version.py'),
           'rt') as fp:
     exec(fp.read(), g)
     version = g['__version__']
@@ -117,13 +117,13 @@ html_theme = 'alabaster'
 html_theme_options = {
     'description': 'Client for Invenio RDM instances',
     'github_user': 'inveniosoftware',
-    'github_repo': 'invenio-client',
+    'github_repo': 'storm-client-invenio',
     'github_button': False,
     'github_banner': True,
     'show_powered_by': False,
     'extra_nav_links': {
-        'invenio-client@GitHub': 'https://github.com/storm-platform/invenio-client',
-        'invenio-client@PyPI': 'https://pypi.python.org/pypi/invenio-client/',
+        'storm-client-invenio@GitHub': 'https://github.com/storm-platform/storm-client-invenio',
+        'storm-client-invenio@PyPI': 'https://pypi.python.org/pypi/storm-client-invenio/',
     }
 }
 
@@ -228,7 +228,7 @@ html_sidebars = {
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'invenio-client_namedoc'
+htmlhelp_basename = 'storm-client-invenio_namedoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -250,7 +250,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'invenio-client.tex', u'invenio-client Documentation',
+    (master_doc, 'storm-client-invenio.tex', u'storm-client-invenio Documentation',
      u'Felipe Menino Carlos', 'manual'),
 ]
 
@@ -280,7 +280,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'invenio-client', u'invenio-client Documentation',
+    (master_doc, 'storm-client-invenio', u'storm-client-invenio Documentation',
      [author], 1)
 ]
 
@@ -294,8 +294,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'invenio-client', u'invenio-client Documentation',
-     author, 'invenio-client', 'Client for Invenio RDM instances',
+    (master_doc, 'storm-client-invenio', u'storm-client-invenio Documentation',
+     author, 'storm-client-invenio', 'Client for Invenio RDM instances',
      'Miscellaneous'),
 ]
 

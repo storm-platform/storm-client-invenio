@@ -2,7 +2,7 @@
 #
 # Copyright (C) 2021 Storm Project.
 #
-# invenio-client is free software; you can redistribute it and/or modify it
+# storm-client-invenio is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 
 """Client for Invenio RDM instances"""
@@ -45,12 +45,12 @@ packages = find_packages()
 
 # Get the version string. Cannot be done with import!
 g = {}
-with open(os.path.join("invenio_client", "version.py"), "rt") as fp:
+with open(os.path.join("storm_client_invenio", "version.py"), "rt") as fp:
     exec(fp.read(), g)
     version = g["__version__"]
 
 setup(
-    name="invenio-client",
+    name="storm-client-invenio",
     version=version,
     description=__doc__,
     long_description=readme + "\n\n" + history,
@@ -58,7 +58,7 @@ setup(
     license="MIT",
     author="Felipe Menino Carlos",
     author_email="felipe.carlos@inpe.br",
-    url="https://github.com/storm-platform/invenio-client",
+    url="https://github.com/storm-platform/storm-client-invenio",
     packages=packages,
     zip_safe=False,
     include_package_data=True,

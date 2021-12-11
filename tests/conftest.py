@@ -2,7 +2,7 @@
 #
 # Copyright (C) 2021 Storm Project.
 #
-# invenio-client is free software; you can redistribute it and/or modify it
+# storm-client-invenio is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 
 """Pytest configuration.
@@ -18,8 +18,8 @@ import pytest
 from flask import Flask
 from flask_babelex import Babel
 
-from invenio_client import InvenioClient
-from invenio_client.views import blueprint
+from storm_client_invenio import InvenioClient
+from storm_client_invenio.views import blueprint
 
 
 @pytest.fixture(scope='module')
