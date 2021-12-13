@@ -38,4 +38,4 @@ About
 Invenio RDM Python client library for the Storm Platform.
 
 - Free software: MIT license;
-- Documentation: https://storm-reprozip-proxy.readthedocs.io/
+- Documentation: https://storm-client-invenio.readthedocs.io/
