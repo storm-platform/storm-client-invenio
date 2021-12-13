@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "storm-client-invenio"
+version = "0.1.0"
+description = "Invenio RDM Python client library for the Storm Platform."
+authors = ["Felipe Carlos <felipe.carlos@inpe.br>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/storm-platform/storm-client-invenio"
+keywords = ["Storm Platform", "Invenio RDM", "Client library"]
+classifiers = [
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Development Status :: 1 - Planning",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+httpx = "^0.21.1"
+pydash = "^5.1.0"
+cachetools = "^4.2.4"
+typeguard = "^2.13.3"
+storm-hasher = { git = "https://github.com/storm-platform/storm-hasher" }
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
