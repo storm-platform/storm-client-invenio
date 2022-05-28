@@ -7,6 +7,8 @@
 Changes
 =======
 
-Version 0.1.0 (released TBD)
+Version 0.1.0 (2022-05-27)
+--------------------------------
 
-- Initial public release.
+- Initial public API version;
+- Implemented support for InvenioRDM v8 Record API.
